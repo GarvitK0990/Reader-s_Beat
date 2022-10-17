@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   <!---MODAL SECTION STARTS-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reader's Beat - Buy Now</title>
+    <link rel="stylesheet" href="../index.css">
+    <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Alex Brush' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Charm' rel='stylesheet'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href='https://fonts.googleapis.com/css?family=Chela One' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@700;800&display=swap" rel="stylesheet">
+    <script src="/index.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+	<!---FAV ICON INSERTED AT THE BEGGINNING OF TITLE-->
+    <link rel="shortcut icon" href="logo.png">  
+    </head>
+<body>
+    <div class="container-fluid">
+        <img class='img' src="https://www.graphicsprings.com/filestorage/stencils/a88c5aeed9a5acbbf462c086ca5f6e72.svg">
+        <br><br>
+        <span class="heading">Reader's Beat </span>
+        <div class="wrap">
+          <div class="search">
+             <input type="text" class="searchTerm" placeholder="Search by Title, Author, Publisher or ISBN">         <!----search is changed-->
+             <button type="submit" class="searchButton">
+               <i class="fa fa-search"></i>
+            </button>
+          </div>
+       </div>
+          <a href="login.html"><button type="button" class="button button1"> Login</button></a>
+          <a href="signup.html" target="_blank"><button type="button" class="button2">Contact Us</button></button></a>
+            
+      </div>
+      <nav class="navbar sticky-top" style="background-color: rgb(255, 255, 255);">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html">Home</a>
+          <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" style="color: white; background-color: #97c7cf;" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+				<a href="#" class="overlayh">Action & Adventure</a>
+				<a href="#" class="overlayh">Horror</a>
+				<a href="#" class="overlayh">Science Fiction</a>
+				<a href="#" class="overlayh">Bussiness & Economics</a>
+				<a href="#" class="overlayh">Agriculture</a>
+				<a href="#" class="overlayh">Comics & Mangas</a>
+				<a href="#" class="overlayh">Children & Young Adult</a>
+				<a href="#" class="overlayh">Literature & Fiction</a>
+            </div>
+          </div>
+
+          <span class="navbar-brand" style="cursor: pointer;" onclick="openNav()">Categories &nbsp;<i class="fa fa-caret-down"></i>
+          </span>
+          <script>
+            function openNav() {
+              document.getElementById("myNav").style.height = "100%";
+            }
+            
+            function closeNav() {
+              document.getElementById("myNav").style.height = "0%";
+            }
+            </script>
+          <a class="navbar-brand" href="featuredauthors.html">Featured Authors</a>                   <!----FEATURED AUTHORS INSTEAD OF SUPPORT US-->
+          <a class="navbar-brand" href="cu.html" >Buy Now</a>     <!----NEW RELEASES instead of Contact us-->
+          <a class="navbar-brand" href="aboutus.html">About Us</a>
+        </div>
+      </nav>      <!---MODAL SECTION ENDS-->
+	<title>Reader's Beat </title>
+	<style type="text/css">
+		@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+	*{
+		margin: 0;
+		padding: 0;
+		color: #454545;
+	}
+	h1{
+		width: 3%;
+	    position: relative;
+	    top: 60px;
+	    left: 90%;
+	    cursor: pointer;
+	}
+	h1:before{
+		content: attr(data-count);
+	    color: white;
+	    position: absolute;
+	    right: 16px;
+	    font-size: 15px;
+	    text-align: center;
+	    top: -12px;
+	    width: 20px;
+	    height: 20px;
+	    background: red;
+	    border-radius: 50%;
+	    opacity: 0;
+	}
+	h1.zero:before{
+		opacity: 1;
+	}
+		section{
+			margin: 100px auto;
+			width: 90%;
+			height: 400px;
+			display: flex;
+			justify-content: space-around;
+		}
+		section div{
+			width: 22%;
+			height: 93%;
+			background:#f5f5f5;
+			padding: 1%;
+			position: relative;
+		}
+		img{
+			width: 300px;
+			height: 186px;
+		}
+
+		p{
+			margin: 5px;
+		}
+		h6{
+		    width: 50px;
+		    padding: 5px;
+		    margin: 10px;
+		    font-size: 15px;
+		}
+		button{
+			padding: 5px;
+		    background: red;
+		    border: none;
+		    outline: none;
+		    font-weight: bold;
+		    color: #fafafa;
+		    cursor: pointer;
+		}
+		section div span{
+			position: absolute;
+		    top: 14px;
+		    left: 13px;
+		    background: red;
+		    width: 300px;
+		    height: 186px;
+		    display: none;
+		}
+		section div span img{
+			width: 100%;
+			height: 100%;
+		}
+		section div:nth-child(1)>span.active{
+			animation: first 0.5s ease-in;
+			z-index: 2;
+			display: block;
+
+		}
+		section div:nth-child(2)>span.active{
+			animation: second 0.5s ease-in;
+			z-index: 2;
+			display: block;
+
+		}
+		section div:nth-child(3)>span.active{
+			animation: third 0.5s ease-in;
+			z-index: 2;
+			display: block;
+
+		}
+		section div:nth-child(4)>span.active{
+			animation: four 0.5s ease-in;
+			z-index: 2;
+			display: block;
+
+		}
+		@keyframes first{  /* @keyframes rule specifies the animation code*/
+			to{
+				width: 30px;
+			    height: 20px;
+			    left: 1290px;
+			    top: -70px;
+			}
+		}
+		@keyframes second{
+			to{
+				width: 30px;
+			    height: 20px;
+			    left: 948px;
+			    top: -70px;
+			}
+		}
+		@keyframes third{
+			to{
+				width: 30px;
+			    height: 20px;
+			    left: 606px;
+			    top: -70px;
+			}
+		}
+		@keyframes four{
+			to{
+				width: 30px;
+			    height: 20px;
+			    left: 265px;
+			    top: -70px;
+			}
+		}
+
+
+		
+		.select{
+			width: 60%;
+			height: 580px;
+			padding: 5%;
+			background: #222;
+			position: absolute;
+			top: -1000px;
+			left: 20%;
+			transition: 0.5s;
+			overflow-y: auto;
+			margin: auto;
+		}
+		.select.display{
+			top: 10px;
+		}
+		.select div{
+			width: 100%;
+			height: 200px;
+			display: flex;
+			padding: 5px;
+			border: 1px solid white;
+			position: relative;
+			margin: 5px auto;
+		}
+		.select div img{
+			width: 300px;
+			height: 100%;
+		}
+		.select div p{
+			padding: 35px;
+			color: white;
+		}
+		.select div h6,
+		.select div button{
+			position: absolute;
+			left: 45%;
+			top: 50%;
+			color: white;
+		}
+		.select div button{
+			left: 60%;
+			top: 55%;
+		}
+		.select div span{
+			display: none;
+		}
+		.img0{  border: 2px solid rgb(194, 184, 184);
+  			border-radius: 2px;
+			margin: auto;
+  			padding: 10px;
+			width: 200px;
+			margin-left: 40px;
+			height: 320px;
+  			transition: transform 0.2s;}
+
+		
+	
+	</style>
+</head>
+<body>
+	<h1>
+	<a href="login.html" style="left: 50px; position: relative; top: 10px; "> <i class=" fa fa-shopping-cart" ></i> </a> </h1>
+
+	<section>
+		<div class="item">
+			<img class='img0' src="update16.jpeg" width="200px" height="290px">
+			<p>The Intelligent Investor
+			</p>
+			<h6>Rs.510</h6>
+			<span></span>
+			<button>Add-cart</button>
+			
+		</div>
+
+		<div class="item">
+			<img class='img0' src="book2.jpg" width="200px" height="290px">
+			<p>The Imperfections Of Memory</p>
+			<h6>Rs.510</h6>
+			<span></span>
+			<button>Add-cart</button>
+		</div>
+
+		<div class="item">
+			<img class='img0' src="update4.jpeg" width="200px" height="290px">
+			<p>THE KING OF DRUGS</p>
+			<h6>Rs.99.99</h6>
+			<span></span>
+			<button>Add-cart</button>
+		</div>
+		<div class="item">
+			<img class='img0' src="update3.jpeg" width="200px" height="290px">
+			<p>The Last Queen</p>
+			<h6>Rs. 599</h6>
+			<span></span>
+			<button>Add-cart</button>
+		</div>
+</section>
+<section>		
+		<div class="item">
+			<img class='img0' src="update1.jpeg" width="200px" height="290px">
+			<h4>When Breathe Becomes Air</h4>
+			<h6>Rs.399</h6>
+			<span></span>
+			<button>Add-cart</button>
+		</div>
+		<div class="item">
+			<img class='img0' src="update2.jpeg" width="200px" height="290px">
+			<p>Rusking Bond</p>
+			<h6>Rs.125</h6>
+			<span></span>
+			<button>Add-cart</button>
+		</div>
+		<br>
+		<div class="item">
+			<img class='img0' src="update13.jpeg" width="200px" height="290px">
+			<p>The Archer</p>
+			<h6>Rs.172</h6>
+			<span></span>
+			<button>Add-cart</button>
+		</div>
+		<div class="item">
+			<img class='img0' src="update8.jpeg" width="200px" height="290px">
+			<p>The Dharma Forest</p>
+			<h6>Rs.319</h6>
+			<span></span>
+			<button>Add-cart</button>
+		</div>
+		</section>
+		<section>
+		<div class="item">
+			<img class='img0' src="update7.jpeg" width="200px" height="290px">
+			<p>The Numbers Game</p>
+			<h6>Rs.302</h6>
+			<span></span>
+			<button>Add-cart</button>
+		</div>
+		<div class="item">
+			<img class='img0' src="update10.jpeg" width="200px" height="290px">
+			<p>A Promised Land</p>
+			<h6>Rs.1299</h6>
+			<span></span>
+			<button>Add-cart</button>
+		</div>
+		<div class="item">
+			<img class='img0' src="update11.jpeg" width="200px" height="290px">
+			<p>The Psycology Of Money</p>
+			<h6>Rs.275</h6>
+			<span></span>
+			<button>Add-cart</button>
+		</div>
+		<div class="item">
+			<img class='img0' src="update12.jpeg" width="200px" height="290px">
+			<p>Think Like A Monk</p>
+			<h6>Rs.345</h6>
+			<span></span>
+			<button>Add-cart</button>
+		</div>
+	</section>
+	<section>
+        <div class="item">
+            <img class='img0' src="update14.jpeg" width="200px" height="290px">
+            <p>Legend Of Suheldev</p>
+            <h6>Rs.283</h6>
+            <span></span>
+            <button>Add-cart</button>
+        </div>
+        <div class="item">
+            <img class='img0' src="update15.jpeg" width="200px" height="290px">
+            <p>The 5 AM Club</p>
+            <h6>Rs.234</h6>
+            <span></span>
+            <button>Add-cart</button>
+        </div>
+        <div class="item">
+            <img class='img0' src="update16.jpeg" width="200px" height="290px">
+            <p>The Intelligent Investor</p>
+            <h6>Rs.510</h6>
+            <span></span>
+            <button>Add-cart</button>
+        </div>
+        <div class="item">
+            <img class='img0' src="update17.jpeg" width="200px" height="290px">
+            <p>Grandma's Bag Of Stories</p>
+            <h6>Rs.345</h6>
+            <span></span>
+            <button>Add-cart</button>
+        </div>
+    </section>
+    <section>
+        <div class="item">
+            <img class='img0' src="update18.jpeg" width="200px" height="290px">
+            <p>Sapiens:A Brief History Of Humankind</p>
+            <h6>Rs.345</h6>
+            <span></span>
+            <button>Add-cart</button>
+        </div>
+        <div class="item">
+            <img class='img0' src="update19.jpeg" width="200px" height="290px">
+            <p>Shuggie Bain</p>
+            <h6>Rs.289</h6>
+            <span></span>
+            <button>Add-cart</button>
+        </div>
+        <div class="item">
+            <img class='img0' src="update20.jpeg" width="200px" height="290px">
+            <p>India Since Independence</p>
+            <h6>Rs.945</h6>
+            <span></span>
+            <button>Add-cart</button>
+        </div>
+        <div class="item">
+            <img class='img0' src="update21.jpeg" width="200px" height="290px">
+            <p><b>Adiyogi:The Source Of Yoga</b></p>
+            <h6>Rs.1179</h6>
+            <span></span>
+            <button>Add-cart</button>
+        </div>
+	
+	<div class="select">
+		
+	</div>
+	
+	
+
+
+<script type="text/javascript">
+	var noti = document.querySelector('h1');
+	var select = document.querySelector('.select');
+	var button = document.getElementsByTagName('button');
+	for(var but of button){
+		but.addEventListener('click', (e)=>{
+			var add = Number(noti.getAttribute('data-count') || 0);
+			noti.setAttribute('data-count', add +1);
+			noti.classList.add('zero')
+
+			// image --animation to cart ---//
+			var image = e.target.parentNode.querySelector('img');
+			var span = e.target.parentNode.querySelector('span');
+			var s_image = image.cloneNode(false);
+			span.appendChild(s_image);
+			span.classList.add("active");
+			setTimeout(()=>{
+				span.classList.remove("active");
+				span.removeChild(s_image);
+			}, 500); 
+			
+
+			// copy and paste //
+			var parent = e.target.parentNode;
+			
+			
+		})
+	}
+	
+	
+</script>
+
+			</body>
+			</html>
